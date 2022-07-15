@@ -172,6 +172,21 @@ nav .active {
     margin-top: 10px;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+
 article .news_data {
     display: flex;
 }
@@ -205,4 +220,11 @@ article .news_title {
     margin-bottom: 25px;
     color: #000;
     font-size: 23px;
+}
+
+article .news_resume {
+    color: #5c5c5c;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
 }

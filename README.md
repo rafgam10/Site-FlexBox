@@ -8,6 +8,12 @@ No site que do curso de programação, é um treino de flexbox para sites, coloq
 # ===================================== 
 
 # Dia 2:
+Conseguir arrumar o erro do meu site que era uma letra no container mais já arrumei o erro do site na parte de baixo, coloquei um tag "a" para deixar os artigos de baixo linkando como um link, apois isso coloqui uma class "flex" com a class "widget_body" assim eles ficar seprando com os artigos e demais.
+
+# =====================================
+
+# Dia 3:
 
 
+# =====================================
 # Meu Insta🌐: https://www.instagram.com/rafael.timoteo.r.h/
