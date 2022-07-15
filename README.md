@@ -13,6 +13,11 @@ Conseguir arrumar o erro do meu site que era uma letra no container mais já arr
 # =====================================
 
 # Dia 3:
+Coloquei um footer com algumas propriedades para descrição do site, não coloqui as infomaçôes do site mais coloquei para continua depois.
+
+#======================================
+
+# Dia 4:
 
 
 # =====================================
