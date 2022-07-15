@@ -18,7 +18,7 @@ Coloquei um footer com algumas propriedades para descrição do site, não coloq
 #======================================
 
 # Dia 4:
-
+Coloquei para o site fica resposivel para mobile e mudei algumas coisas no site e tbm usei JS no site para deixar o menu mobile como janela.
 
 # =====================================
 # Meu Insta🌐: https://www.instagram.com/rafael.timoteo.r.h/

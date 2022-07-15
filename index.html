@@ -1,237 +1,249 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Site Flexbox</title>
-</head>
-<body>
 
-<!--Aqui fica a LOGO e o MENU do site.-->
-<header >
-    <div class="container">
-        <div class="logo">
-            <a href=""><img src="assets/imagens/logo.png" alt=""></a>
-        </div>
-        <div class="menu">
-            <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="blog.html">Blog</a>
-                <a href="pages.html">Pages</a>
-                <a href="departments.html">Departments</a>
-                <a href="#">Timetable</a>
-                <a href="#">Gallery</a>
-                <a href="#">Contact</a>
-            </nav>
-        </div>
-    </div>
-</header>
-<!--Aqui terminar a LOGO e o Menu do site.-->
-
-<!--Aqui começar os banners-->
-<section id="banner">
-    <div class="container column">
-        <div class="banner_headline">
-            <h1>Top notch experience</h1>
-            <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
-        </div>
-        <div class="banner_options">
-            <div class="banner1">
-                <div class="banner_title">Emergency Case</div>
-                <div class="banner-desc">Algum texto qualquer</div>
-                <a href="">Read more</a>
+<html>
+    <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=0" />
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    
+    <script type="text/javascript">
+    window.onload = function(){
+        document.querySelector(".menuMobile").addEventListener("click", function(){
+            if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                document.querySelector(".menu nav ul").style.display = 'none';
+            } else {
+                document.querySelector(".menu nav ul").style.display = 'flex';
+            }
+        });
+    };
+    </script>
+    
+    <title>MediCenter</title>
+    
+    </head>
+    <body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="assets/imagens/logo.png" /></a>
             </div>
-            <div class="banner2">
-                <div class="banner_title">Doctors Timetable</div>
-                <div class="banner-desc">Algum texto qualquer</div>
-                <a href="">Read more</a>
-            </div>
-            <div class="banner3">
-                <div class="banner_title">Opening Hours</div>
-                <div class="banner_hous">Monday-Friday 8.00-17.00</div>
-                <div class="banner_hous">Saturday 9.30</div>
-                <div class="banner_hous">Sunday 9.30-15.00</div>
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="">HOME</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">PAGES</a></li>
+                        <li><a href="">DEPARTMENTS</a></li>
+                        <li><a href="">TIMETABLE</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </div>
-</section>
-<!--Aqui terminar os banners-->
-
-<!--Começor do container-->
-<section id="geral">
-    <div class="container">
-        <section>
-            <div class="widget">
-                <div class="widget_title">
-                    <div class="widget_title_text">Latest News</div>
-                    <div class="widget_title_bar"></div>
-                </div>
-                <div class="widget_body flex">
-                    
-                    <article>
-                        <a href="#">
-                            <div class="news_data">
-                                <div class="news_posted_at">12 DEC 12</div>
-                                <div class="news_comments">2</div>
-                            </div>
-                            <div class="news_thumbnail">
-                                <img src="assets/imagens/medico.jpeg">
-                            </div>
-                            <div class="news_title">
-                                Lorem ipsum dolor sit amat  velum
-                            </div>
-                            <div class="news_resume">
-                                it is a long established fact that a reader will be distracted by the readble content of a page when looking at its layout. The point of using lorem upsum is that it has a more-or-less normal distribution pf letters,  as opposed to using 'Content here', making it look like readable English.
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="news_data">
-                                <div class="news_posted_at">12 DEC 12</div>
-                                <div class="news_comments">2</div>
-                            </div>
-                            <div class="news_thumbnail">
-                                <img src="assets/imagens/medico.jpeg">
-                            </div>
-                            <div class="news_title">
-                                Lorem ipsum dolor sit amat  velum
-                            </div>
-                            <div class="news_resume">
-                                it is a long established fact that a reader will be distracted by the readble content of a page when looking at its layout. The point of using lorem upsum is that it has a more-or-less normal distribution pf letters,  as opposed to using 'Content here', making it look like readable English.
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="news_data">
-                                <div class="news_posted_at">12 DEC 12</div>
-                                <div class="news_comments">2</div>
-                            </div>
-                            <div class="news_thumbnail">
-                                <img src="assets/imagens/medico.jpeg">
-                            </div>
-                            <div class="news_title">
-                                Lorem ipsum dolor sit amat  velum
-                            </div>
-                            <div class="news_resume">
-                                it is a long established fact that a reader will be distracted by the readble content of a page when looking at its layout. The point of using lorem upsum is that it has a more-or-less normal distribution pf letters,  as opposed to using 'Content here', making it look like readable English.
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="news_data">
-                                <div class="news_posted_at">12 DEC 12</div>
-                                <div class="news_comments">2</div>
-                            </div>
-                            <div class="news_thumbnail">
-                                <img src="assets/imagens/medico.jpeg">
-                            </div>
-                            <div class="news_title">
-                                Lorem ipsum dolor sit amat  velum
-                            </div>
-                            <div class="news_resume">
-                                it is a long established fact that a reader will be distracted by the readble content of a page when looking at its layout. The point of using lorem upsum is that it has a more-or-less normal distribution pf letters,  as opposed to using 'Content here', making it look like readable English.
-                            </div>
-                        </a>
-                    </article>
-
-                </div>
+    </header>
+    
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Top notch experience</h1>
+                <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
             </div>
-        </section>
-        <aside>
-            <div class="widget">
-                <div class="widget_title">
-                <div class="widget_title_text">Departments</div>
-                <div class="widget_title_bar"></div>
-
-                <div class ="departments_content">
-                    <div></div>
-                    <div></div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">Emergency Case</div>
+                    <div class="banner_desc">Algum texto qualquer</div>
+                    <a href="">Read more</a>
                 </div>
-                <div class ="departments_content">
-                    <div></div>
-                    <div></div>
+                <div class="banner2">
+                    <div class="banner_title">Doctors Timetable</div>
+                    <div class="banner_desc">Algum texto qualquer</div>
+                    <a href="">Read more</a>
                 </div>
-                <div class ="departments_content">
-                    <div></div>
-                    <div></div>
+                <div class="banner3">
+                    <div class="banner_title">Opening Hours</div>
                 </div>
-                </div>
-            </div>
-
-            <div class="widget">
-                <div class="widget_title">
-                <div class="widget_title_text">Make An Appointment</div>
-                <div class="widget_title_bar"></div>
-                </div>
-            </div>
-        </aside>
-    </div>
-</section>
-<!--Aqui terminar o container-->
-
-
-<!--Aqui é parte da Descrição do site-->
-<footer>
-    <div class="container flexColumn">
-        <div class="footer_menu">
-            <div class="fm_1">
-                ...
-            </div>
-            <div class="fm_2">
-                ...
-            </div>
-            <div class="fm_3">
-                ...
             </div>
         </div>
-        <div class="footer_area">
-            <div class="footer_areaitem">
+    </section>
+    
+    <section id="geral">
+        <div class="container">
+            <section>
                 <div class="widget">
                     <div class="widget_title">
-                        <div class="widget_title_text">Medicenter Clinic</div>
+                        <div class="widget_title_text">Latest News</div>
                         <div class="widget_title_bar"></div>
                     </div>
-                    <div class="widget_body testP">
-                        Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada individual.
-                        
+                    <div class="widget_body flex">
+                            
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/imagens/medico.jpeg" />
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amat velum
+                                </div>
+                                <div class="news_resume">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                                </div>
+                            </a>
+                        </article>
+    
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/imagens/medico.jpeg" />
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amat velum
+                                </div>
+                                <div class="news_resume">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                                </div>
+                            </a>
+                        </article>
+    
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/imagens/medico.jpeg" />
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amat velum
+                                </div>
+                                <div class="news_resume">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                                </div>
+                            </a>
+                        </article>
+    
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/imagens/medico.jpeg" />
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amat velum
+                                </div>
+                                <div class="news_resume">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                                </div>
+                            </a>
+                        </article>
+    
                     </div>
                 </div>
-            </div>
-            <div class="footer_areaitem">
+            </section>
+            <aside>
                 <div class="widget">
                     <div class="widget_title">
-                        <div class="widget_title_text">Latest Posts</div>
+                        <div class="widget_title_text">Deparments</div>
                         <div class="widget_title_bar"></div>
                     </div>
                     <div class="widget_body">
                         ...
                     </div>
                 </div>
-            </div>
-            <div class="footer_areaitem">
                 <div class="widget">
                     <div class="widget_title">
-                        <div class="widget_title_text">Lastest Tweets</div>
+                        <div class="widget_title_text">Make An Appointment</div>
                         <div class="widget_title_bar"></div>
                     </div>
                     <div class="widget_body">
                         ...
                     </div>
                 </div>
+            </aside>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <a href="">
+                        ...
+                    </a>
+                </div>
+                <div class="fm_2">
+                    <a href="">
+                        ...
+                    </a>
+                </div>
+                <div class="fm_3">
+                    <a href="">
+                        ...
+                    </a>
+                </div>
             </div>
+    
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Medicenter Clinic</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Posts</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Tweets</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer_copy">
+                Coyright - Todos os direitos reservados
+            </div>
+    
         </div>
-
-        <div class="footer_copy">
-            Coyright - toos os direitos reservados
-        </div>
-    </div>
-</footer>
-<!--Aqui terminar a Descrição do site-->
-
-</body>
-</html>
+    </footer>
+    
+    </body>
+    </html>
